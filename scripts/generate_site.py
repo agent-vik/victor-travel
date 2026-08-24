@@ -14,7 +14,7 @@ data.json     Additive portal metadata only:
               Must not restate or override body facts
               (dates, hotels, transport, duration.zh, title.zh, …).
 
-generate_site.py joins them → index.html, trip/{slug}/, trip/{slug}/{slug}.docx, sitemap.xml
+generate_site.py joins them → index.html, trip/{slug}/, trip/{slug}/{slug}.docx + {slug}_en.docx, sitemap.xml
 """
 
 from __future__ import annotations
