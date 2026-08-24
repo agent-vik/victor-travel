@@ -55,7 +55,10 @@ SITE = {
     "blogHome": "https://victor42.eth.limo/",
 }
 
-GUIDE_METHOD_POST = "https://victor42.eth.limo/post/3642/"
+GUIDE_METHOD_POST = {
+    "zh": "https://victor42.eth.limo/post/3642/",
+    "en": "https://victor42.eth.limo/post-en/3642/",
+}
 GUIDE_METHOD_TITLE = {
     "zh": "手把手教你制作旅行攻略",
     "en": "A Hands-On Guide to Building Travel Itineraries",
@@ -68,8 +71,8 @@ TITLE = {
 }
 
 DESCRIPTION = {
-    "zh": "历次出行前写好的详细行程：每天去哪、住哪、怎么走，附检查清单；也可跳到对应相册与游记长文。",
-    "en": "Detailed itineraries written before each trip—where to go each day, where to stay, how to get around—plus checklists, albums, and travelogues.",
+    "zh": "历次出行前写好的详细行程：每天去哪、住哪、怎么走，附检查清单；部分攻略带有详细的游记长文与旅行相册。",
+    "en": "Detailed itineraries written before each trip—where to go each day, where to stay, how to get around—plus checklists; some guides link to full travelogues and photo albums.",
 }
 
 
@@ -328,8 +331,8 @@ def render_download_section(guide: dict) -> str:
         <section class="guide-download panel" aria-labelledby="guide-download-title">
             <h2 class="guide-download-title" id="guide-download-title" data-lang="zh">带走这份攻略</h2>
             <h2 class="guide-download-title" data-lang="en" hidden>Take this guide</h2>
-            <p class="guide-download-lead" data-lang="zh">下载 Word 文档，离线查看每日行程、待办与候选景点。</p>
-            <p class="guide-download-lead" data-lang="en" hidden>Download a Word file with the full itinerary, todos, and POI shortlist.</p>
+            <p class="guide-download-lead" data-lang="zh">下载 Word 文档，按自己的需要二次加工。</p>
+            <p class="guide-download-lead" data-lang="en" hidden>Download the Word file and tailor it to your own trip.</p>
             <div data-lang="zh">
                 <a class="download-btn" href="{zh_docx}" download>📄 <span>下载 Word 攻略</span></a>
             </div>
@@ -340,7 +343,8 @@ def render_download_section(guide: dict) -> str:
 
 
 def render_guide_method_section() -> str:
-    url = html.escape(GUIDE_METHOD_POST)
+    url_zh = html.escape(GUIDE_METHOD_POST["zh"])
+    url_en = html.escape(GUIDE_METHOD_POST["en"])
     title_zh = html.escape(GUIDE_METHOD_TITLE["zh"])
     title_en = html.escape(GUIDE_METHOD_TITLE["en"])
     return f"""
@@ -350,8 +354,8 @@ def render_guide_method_section() -> str:
             <div class="guide-method-body">
                 <p data-lang="zh">其实制作有固定的逻辑，按照特定的顺序把各种因素串起来，行程很快就出来了。</p>
                 <p data-lang="en" hidden>There is a repeatable logic behind them—string the right factors together in order and an itinerary falls into place quickly.</p>
-                <p data-lang="zh">具体的思路可以看这篇：<a href="{url}" target="_blank" rel="noopener noreferrer">{title_zh}</a></p>
-                <p data-lang="en" hidden>Read how I think about it here: <a href="{url}" target="_blank" rel="noopener noreferrer">{title_en}</a></p>
+                <p data-lang="zh">具体的思路可以看这篇：<a href="{url_zh}" target="_blank" rel="noopener noreferrer">{title_zh}</a></p>
+                <p data-lang="en" hidden>Read how I think about it here: <a href="{url_en}" target="_blank" rel="noopener noreferrer">{title_en}</a></p>
             </div>
         </section>"""
 
