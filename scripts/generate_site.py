@@ -780,7 +780,7 @@ def main() -> None:
     (ROOT / "sitemap.xml").write_text(build_sitemap(guides, lastmod), encoding="utf-8")
     print(f"wrote sitemap.xml ({1 + len(guides)} urls)")
 
-    # 空白模板双语 docx：模板正文与攻略同结构，复用 write_guide_docx
+    # 空白模板：双语下载副本（docx 由 write_guide_docx 生成，md 从源文件同步）
     templates_dir = ROOT / "assets" / "templates"
     templates_dir.mkdir(parents=True, exist_ok=True)
     for zh_src, en_src, slug in [

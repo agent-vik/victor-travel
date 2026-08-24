@@ -86,7 +86,7 @@ victor-travel/
 │   ├── data.json               # 附加元数据（人工维护）
 │   ├── covers-cache.json       # 博客头图外链缓存（生成时更新）
 │   └── album-thumbs-cache.json # 相册五列缩略图外链缓存（生成时更新）
-├── templates/              # 空白攻略模板源文件（游览版/度假版，与 Obsidian 一致）
+├── templates/              # 空白攻略模板源文件（游览版/度假版 × 中英）
 ├── assets/templates/       # 模板下载副本（游览/度假 × 中英 × md/docx，首页可下载）
 ├── trip/{slug}/            # 详情页 + Word（生成物）
 ├── index.html, sitemap.xml # 首页与站点地图（生成物）
