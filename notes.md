@@ -55,7 +55,7 @@ python3 -m http.server 8765        # 本地预览
 
 **明确不做**：不为 SEO 把飞书字样写回攻略；不把 docx 放进 sitemap；不伪造英文 hreflang 指向不存在的 URL。
 
-生成产物：`index.html`、`sitemap.xml`、`trip/{slug}/`（详情页 + `{slug}.docx` / `{slug}_en.docx`）。详情页自上而下：标题摘要天数 → 互链卡片（博客单张头图 / 相册前 5 张等宽 5 列，均外链 `cdn.victor42.work`）→ 结构化正文（中英 `data-lang` 切换）→ Word 下载 → 引流至博客《手把手教你制作旅行攻略》（`post/3642/`）。
+生成产物：`index.html`、`sitemap.xml`、`trip/{slug}/`（详情页 + `{slug}.docx` / `{slug}_en.docx`）。详情页自上而下：标题摘要天数 → 互链卡片（博客单张头图 / 相册前 5 张等宽 5 列，均外链 `cdn.victor42.work`）→ 结构化正文（中英 `data-lang` 切换）→ Word 下载 → 引流至博客《手把手教你制作旅行攻略》（中 `post/3642/` / 英 `post-en/3642/`，随页面语种切换）。
 
 ## 4. 架构参考（低频）
 
