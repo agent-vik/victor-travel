@@ -463,7 +463,7 @@ def render_guide_page(
     <meta name="twitter:image" content="{html.escape(og_image)}">
 
     <meta name="theme-color" content="#2A9D8F">
-    <link rel="icon" type="image/x-icon" href="https://victor42.work/assets/images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 
     <script src="../../assets/analytics.js"></script>
     <script type="application/ld+json">
@@ -599,7 +599,7 @@ def render_index(guides: list[dict]) -> str:
     <meta name="twitter:image" content="{html.escape(origin + 'assets/og-image.png')}">
 
     <meta name="theme-color" content="#2A9D8F">
-    <link rel="icon" type="image/x-icon" href="https://victor42.work/assets/images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
     <script src="./assets/analytics.js"></script>
