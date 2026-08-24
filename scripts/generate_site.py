@@ -38,7 +38,7 @@ GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
 DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
-ASSET_VERSION = "20260824p"
+ASSET_VERSION = "20260824q"
 SITE_NAME = "Victor42 · Travel Guides"
 TRIP_PREFIX = "trip"
 
@@ -550,9 +550,17 @@ def render_templates_section() -> str:
             <div class="guide-method-body">
                 <p data-lang="zh">按我自己的写法留了两份空白模板，照着填就能产出一份完整攻略。两种模式：游览版按景点排耗时，度假版按餐食安排日子。</p>
                 <p data-lang="en" hidden>Two blank templates in the format I actually use—fill them in to build a complete itinerary. Sightseeing mode schedules attractions by hours; vacation mode schedules days around meals.</p>
-                <p>
-                    <a class="download-btn" href="./assets/templates/travel-template-sightseeing.md" download>📄 <span data-lang="zh">游览版模板</span><span data-lang="en" hidden>Sightseeing template</span></a>
-                    <a class="download-btn" href="./assets/templates/travel-template-vacation.md" download>📄 <span data-lang="zh">度假版模板</span><span data-lang="en" hidden>Vacation template</span></a>
+                <div data-lang="zh">
+                    <a class="download-btn" href="./assets/templates/travel-template-sightseeing.docx" download>📄 <span>游览版模板</span></a>
+                    <a class="download-btn" href="./assets/templates/travel-template-vacation.docx" download>📄 <span>度假版模板</span></a>
+                </div>
+                <div data-lang="en" hidden>
+                    <a class="download-btn" href="./assets/templates/travel-template-sightseeing_en.docx" download>📄 <span>Sightseeing template</span></a>
+                    <a class="download-btn" href="./assets/templates/travel-template-vacation_en.docx" download>📄 <span>Vacation template</span></a>
+                </div>
+                <p class="templates-md-note">
+                    <span data-lang="zh">也要 Markdown 源文件：<a href="./assets/templates/travel-template-sightseeing.md" download>游览版</a> · <a href="./assets/templates/travel-template-vacation.md" download>度假版</a></span>
+                    <span data-lang="en" hidden>Prefer the Markdown source: <a href="./assets/templates/travel-template-sightseeing.md" download>sightseeing</a> · <a href="./assets/templates/travel-template-vacation.md" download>vacation</a></span>
                 </p>
             </div>
         </section>"""
@@ -779,6 +787,19 @@ def main() -> None:
     lastmod = date.today().isoformat()
     (ROOT / "sitemap.xml").write_text(build_sitemap(guides, lastmod), encoding="utf-8")
     print(f"wrote sitemap.xml ({1 + len(guides)} urls)")
+
+    # 空白模板双语 docx：模板正文与攻略同结构，复用 write_guide_docx
+    templates_dir = ROOT / "assets" / "templates"
+    templates_dir.mkdir(parents=True, exist_ok=True)
+    for zh_src, en_src, slug in [
+        ("_Template_旅行攻略-游览.md", "_Template_旅行攻略-游览_en.md", "travel-template-sightseeing"),
+        ("_Template_旅行攻略-度假.md", "_Template_旅行攻略-度假_en.md", "travel-template-vacation"),
+    ]:
+        zh_body = (ROOT / "templates" / zh_src).read_text(encoding="utf-8")
+        en_body = (ROOT / "templates" / en_src).read_text(encoding="utf-8")
+        write_guide_docx("旅行攻略模板", zh_body, templates_dir / f"{slug}.docx", lang="zh")
+        write_guide_docx("Travel Itinerary Template", en_body, templates_dir / f"{slug}_en.docx", lang="en")
+    print(f"wrote {len(list(templates_dir.glob('*.docx')))} template docx files")
 
 
 if __name__ == "__main__":

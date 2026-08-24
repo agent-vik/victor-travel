@@ -1102,6 +1102,16 @@ a:hover {
     margin-left: 0.75rem;
 }
 
+.templates-md-note {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+.templates-md-note a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 .guide-unavailable {
     color: var(--color-text-muted);
     font-size: 0.95rem;
