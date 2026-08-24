@@ -36,6 +36,25 @@ python3 -m http.server 8765        # 本地预览
 
 依赖：`python-docx`（Word 生成）、`markdown`（正文渲染）。
 
+## 3.5 SEO 现状与策略
+
+**英文可爬策略：方案 A**——同一 URL 双份 body（`data-lang`/`hidden`），爬虫默认只索引中文；英文仅作为页面内切换的 UX。hreflang 三个变体（zh-CN / en / x-default）均指向同一 URL。**不做独立英文 URL**，除非明确要冲英文流量（那需要重构生成器、sitemap、hreflang）。
+
+已落地的 SEO 措施（全部由 `generate_site.py` 生成，改这里不改产物）：
+
+| 措施 | 首页 | 详情页 |
+|------|------|--------|
+| title / description / canonical | ✅ 差异化 | ✅ 差异化（用 summary） |
+| hreflang（zh-CN/en/x-default） | ✅ | ✅ |
+| OG / Twitter Card（`summary_large_image`） | ✅ 站点默认图 | ✅ 站点默认图 |
+| JSON-LD | `CollectionPage` + `WebSite` | `Article` + `BreadcrumbList` |
+| GA4 | ✅（`assets/analytics.js`，仅生产域名触发） | ✅ |
+| sitemap.xml | ✅ 含全部 13 URL + lastmod | ✅ |
+| robots.txt | ✅ Allow + Sitemap 行 | — |
+| `html lang="zh-CN"` | ✅ | ✅ |
+
+**明确不做**：不为 SEO 把飞书字样写回攻略；不把 docx 放进 sitemap；不伪造英文 hreflang 指向不存在的 URL。
+
 生成产物：`index.html`、`sitemap.xml`、`trip/{slug}/`（详情页 + `{slug}.docx` / `{slug}_en.docx`）。详情页自上而下：标题摘要天数 → 互链卡片（博客单张头图 / 相册前 5 张等宽 5 列，均外链 `cdn.victor42.work`）→ 结构化正文（中英 `data-lang` 切换）→ Word 下载 → 引流至博客《手把手教你制作旅行攻略》（`post/3642/`）。
 
 ## 4. 架构参考（低频）
