@@ -38,7 +38,7 @@ GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
 DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
-ASSET_VERSION = "20260824t"
+ASSET_VERSION = "20260824u"
 SITE_NAME = "Victor42 · Travel Guides"
 TRIP_PREFIX = "trip"
 
@@ -551,8 +551,8 @@ def render_templates_section() -> str:
                 <p data-lang="zh">按我自己的写法留了两份空白模板，照着填就能产出一份完整攻略。两种模式：游览版按景点排耗时，度假版按餐食安排日子。</p>
                 <p data-lang="en" hidden>Two blank templates in the format I actually use—fill them in to build a complete itinerary. Sightseeing mode schedules attractions by hours; vacation mode schedules days around meals.</p>
                 <p>
-                    <span data-lang="zh">📄 <a href="./assets/templates/travel-template-sightseeing.docx" download>游览版.docx</a> · <a href="./assets/templates/travel-template-sightseeing.md" download>游览版.md</a> · <a href="./assets/templates/travel-template-vacation.docx" download>度假版.docx</a> · <a href="./assets/templates/travel-template-vacation.md" download>度假版.md</a></span>
-                    <span data-lang="en" hidden>📄 <a href="./assets/templates/travel-template-sightseeing_en.docx" download>sightseeing.docx</a> · <a href="./assets/templates/travel-template-sightseeing_en.md" download>sightseeing.md</a> · <a href="./assets/templates/travel-template-vacation_en.docx" download>vacation.docx</a> · <a href="./assets/templates/travel-template-vacation_en.md" download>vacation.md</a></span>
+                    <span data-lang="zh">📄 <a href="./templates/sightseeing.docx" download>游览版.docx</a> · <a href="./templates/sightseeing.md" download>游览版.md</a> · <a href="./templates/vacation.docx" download>度假版.docx</a> · <a href="./templates/vacation.md" download>度假版.md</a></span>
+                    <span data-lang="en" hidden>📄 <a href="./templates/en/sightseeing.docx" download>sightseeing.docx</a> · <a href="./templates/en/sightseeing.md" download>sightseeing.md</a> · <a href="./templates/en/vacation.docx" download>vacation.docx</a> · <a href="./templates/en/vacation.md" download>vacation.md</a></span>
                 </p>
             </div>
         </section>"""
@@ -780,21 +780,16 @@ def main() -> None:
     (ROOT / "sitemap.xml").write_text(build_sitemap(guides, lastmod), encoding="utf-8")
     print(f"wrote sitemap.xml ({1 + len(guides)} urls)")
 
-    # 空白模板：双语下载副本（docx 由 write_guide_docx 生成，md 从源文件同步）
-    templates_dir = ROOT / "assets" / "templates"
-    templates_dir.mkdir(parents=True, exist_ok=True)
-    for zh_src, en_src, slug in [
-        ("_Template_旅行攻略-游览.md", "_Template_旅行攻略-游览_en.md", "travel-template-sightseeing"),
-        ("_Template_旅行攻略-度假.md", "_Template_旅行攻略-度假_en.md", "travel-template-vacation"),
-    ]:
-        zh_body = (ROOT / "templates" / zh_src).read_text(encoding="utf-8")
-        en_body = (ROOT / "templates" / en_src).read_text(encoding="utf-8")
-        write_guide_docx("旅行攻略模板", zh_body, templates_dir / f"{slug}.docx", lang="zh")
-        write_guide_docx("Travel Itinerary Template", en_body, templates_dir / f"{slug}_en.docx", lang="en")
-        # md 下载副本：从源文件同步，保证与模板正文逐字一致
-        (templates_dir / f"{slug}.md").write_text(zh_body, encoding="utf-8")
-        (templates_dir / f"{slug}_en.md").write_text(en_body, encoding="utf-8")
-    print(f"wrote {len(list(templates_dir.glob('*.docx')))} template docx files")
+    # 空白模板：源即发布物（templates/ 与 templates/en/ 下的 md），docx 构建时生成到同目录
+    for zh_name, en_name in [("sightseeing", "sightseeing"), ("vacation", "vacation")]:
+        zh_path = ROOT / "templates" / f"{zh_name}.md"
+        en_path = ROOT / "templates" / "en" / f"{en_name}.md"
+        zh_body = zh_path.read_text(encoding="utf-8")
+        en_body = en_path.read_text(encoding="utf-8")
+        write_guide_docx("旅行攻略模板", zh_body, zh_path.with_suffix(".docx"), lang="zh")
+        write_guide_docx("Travel Itinerary Template", en_body, en_path.with_suffix(".docx"), lang="en")
+    n = len(list((ROOT / "templates").rglob("*.docx")))
+    print(f"wrote {n} template docx files")
 
 
 if __name__ == "__main__":
