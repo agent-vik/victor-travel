@@ -57,7 +57,7 @@ python3 -m http.server 8765        # 本地预览
 
 生成产物：`index.html`、`sitemap.xml`、`trip/{slug}/`（详情页 + `{slug}.docx` / `{slug}_en.docx`）。详情页自上而下：标题摘要天数 → 互链卡片（博客单张头图 / 相册前 5 张等宽 5 列，均外链 `cdn.victor42.work`）→ 结构化正文（中英 `data-lang` 切换）→ Word 下载 → 引流至博客《手把手教你制作旅行攻略》（中 `post/3642/` / 英 `post-en/3642/`，随页面语种切换）。
 
-首页在卡片网格之后另有「空白攻略模板」区块（中英双语），提供游览版 / 度假版两份模板下载。模板是静态资源，不进 `data.json`、不当成攻略篇目；源文件在 `templates/`，与 `assets/templates/` 下载副本保持逐字一致。
+首页在卡片网格之后另有「空白攻略模板」区块（链接随页面语种切换）：游览版 / 度假版各提供 Word 与 Markdown 两种下载。模板是静态资源，不进 `data.json`、不当成攻略篇目；源文件在 `templates/`，`assets/templates/` 为首页可下载副本（docx 由生成器在构建时产出，md 从源文件复制），两者保持逐字一致。
 
 ## 4. 架构参考（低频）
 
@@ -87,7 +87,7 @@ victor-travel/
 │   ├── covers-cache.json       # 博客头图外链缓存（生成时更新）
 │   └── album-thumbs-cache.json # 相册五列缩略图外链缓存（生成时更新）
 ├── templates/              # 空白攻略模板源文件（游览版/度假版，与 Obsidian 一致）
-├── assets/templates/       # 模板下载副本（站点 /assets/templates/，首页可下载）
+├── assets/templates/       # 模板下载副本（游览/度假 × 中英 × md/docx，首页可下载）
 ├── trip/{slug}/            # 详情页 + Word（生成物）
 ├── index.html, sitemap.xml # 首页与站点地图（生成物）
 ├── assets/                 # 样式与脚本

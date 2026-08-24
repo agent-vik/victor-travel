@@ -791,6 +791,9 @@ def main() -> None:
         en_body = (ROOT / "templates" / en_src).read_text(encoding="utf-8")
         write_guide_docx("旅行攻略模板", zh_body, templates_dir / f"{slug}.docx", lang="zh")
         write_guide_docx("Travel Itinerary Template", en_body, templates_dir / f"{slug}_en.docx", lang="en")
+        # md 下载副本：从源文件同步，保证与模板正文逐字一致
+        (templates_dir / f"{slug}.md").write_text(zh_body, encoding="utf-8")
+        (templates_dir / f"{slug}_en.md").write_text(en_body, encoding="utf-8")
     print(f"wrote {len(list(templates_dir.glob('*.docx')))} template docx files")
 
 
