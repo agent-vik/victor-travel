@@ -38,7 +38,7 @@ GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
 DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
-ASSET_VERSION = "20260824s"
+ASSET_VERSION = "20260824t"
 SITE_NAME = "Victor42 · Travel Guides"
 TRIP_PREFIX = "trip"
 
@@ -551,8 +551,8 @@ def render_templates_section() -> str:
                 <p data-lang="zh">按我自己的写法留了两份空白模板，照着填就能产出一份完整攻略。两种模式：游览版按景点排耗时，度假版按餐食安排日子。</p>
                 <p data-lang="en" hidden>Two blank templates in the format I actually use—fill them in to build a complete itinerary. Sightseeing mode schedules attractions by hours; vacation mode schedules days around meals.</p>
                 <p>
-                    <span data-lang="zh">📄 <a href="./assets/templates/travel-template-sightseeing.docx" download>游览版（Word）</a> · <a href="./assets/templates/travel-template-sightseeing.md" download>游览版（Markdown）</a> · <a href="./assets/templates/travel-template-vacation.docx" download>度假版（Word）</a> · <a href="./assets/templates/travel-template-vacation.md" download>度假版（Markdown）</a></span>
-                    <span data-lang="en" hidden>📄 <a href="./assets/templates/travel-template-sightseeing_en.docx" download>Sightseeing (Word)</a> · <a href="./assets/templates/travel-template-sightseeing_en.md" download>Sightseeing (Markdown)</a> · <a href="./assets/templates/travel-template-vacation_en.docx" download>Vacation (Word)</a> · <a href="./assets/templates/travel-template-vacation_en.md" download>Vacation (Markdown)</a></span>
+                    <span data-lang="zh">📄 <a href="./assets/templates/travel-template-sightseeing.docx" download>游览版.docx</a> · <a href="./assets/templates/travel-template-sightseeing.md" download>游览版.md</a> · <a href="./assets/templates/travel-template-vacation.docx" download>度假版.docx</a> · <a href="./assets/templates/travel-template-vacation.md" download>度假版.md</a></span>
+                    <span data-lang="en" hidden>📄 <a href="./assets/templates/travel-template-sightseeing_en.docx" download>sightseeing.docx</a> · <a href="./assets/templates/travel-template-sightseeing_en.md" download>sightseeing.md</a> · <a href="./assets/templates/travel-template-vacation_en.docx" download>vacation.docx</a> · <a href="./assets/templates/travel-template-vacation_en.md" download>vacation.md</a></span>
                 </p>
             </div>
         </section>"""

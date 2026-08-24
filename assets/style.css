@@ -1111,7 +1111,10 @@ a:hover {
 .guide-method-body a[download] {
     color: var(--color-primary);
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
+}
+.guide-method-body a[download]:hover {
+    color: var(--color-primary-hover, #248f82);
 }
 
 .guide-unavailable {
