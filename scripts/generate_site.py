@@ -38,7 +38,7 @@ GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
 DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
-ASSET_VERSION = "20260824o"
+ASSET_VERSION = "20260824p"
 SITE_NAME = "Victor42 · Travel Guides"
 TRIP_PREFIX = "trip"
 
@@ -542,6 +542,21 @@ def render_guide_card_html(guide: dict) -> str:
                 <p class="guide-summary" data-lang="en" hidden>{summary_en}</p>
             </a>"""
 
+def render_templates_section() -> str:
+    return f"""
+        <section class="guide-method panel" aria-labelledby="templates-title">
+            <h2 class="guide-method-title" id="templates-title" data-lang="zh">空白攻略模板</h2>
+            <h2 class="guide-method-title" id="templates-title-en" data-lang="en" hidden>Blank guide templates</h2>
+            <div class="guide-method-body">
+                <p data-lang="zh">按我自己的写法留了两份空白模板，照着填就能产出一份完整攻略。两种模式：游览版按景点排耗时，度假版按餐食安排日子。</p>
+                <p data-lang="en" hidden>Two blank templates in the format I actually use—fill them in to build a complete itinerary. Sightseeing mode schedules attractions by hours; vacation mode schedules days around meals.</p>
+                <p>
+                    <a class="download-btn" href="./assets/templates/travel-template-sightseeing.md" download>📄 <span data-lang="zh">游览版模板</span><span data-lang="en" hidden>Sightseeing template</span></a>
+                    <a class="download-btn" href="./assets/templates/travel-template-vacation.md" download>📄 <span data-lang="zh">度假版模板</span><span data-lang="en" hidden>Vacation template</span></a>
+                </p>
+            </div>
+        </section>"""
+
 
 def render_index(guides: list[dict]) -> str:
     origin = SITE["origin"].rstrip("/") + "/"
@@ -570,6 +585,7 @@ def render_index(guides: list[dict]) -> str:
         "url": origin,
         "inLanguage": ["zh-CN", "en"],
     }
+    templates_section = render_templates_section()
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -637,6 +653,8 @@ def render_index(guides: list[dict]) -> str:
         <div class="guides-grid" id="guides-grid">
 {cards}
         </div>
+
+        {templates_section}
 
         <footer class="footer">
             <p id="footer-text"></p>
