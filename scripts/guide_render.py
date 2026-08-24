@@ -53,6 +53,7 @@ def md_fragment(text: str) -> str:
         extensions=["extra", "sane_lists"],
         output_format="html5",
     )
+    rendered = re.sub(r'<a href="(https?://)', r'<a target="_blank" rel="noopener noreferrer" href="\1', rendered)
     return rendered.strip()
 
 
