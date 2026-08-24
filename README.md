@@ -2,7 +2,7 @@
 
 Travel guide portal for Victor42 — Chinese & English itineraries with Word downloads.
 
-[Live](https://travel.victor42.work) | [Blog](https://victor42.eth.limo)
+[Live](https://travel.victor42.work)
 
 ## Tech
 
