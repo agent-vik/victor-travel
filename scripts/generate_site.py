@@ -410,6 +410,25 @@ def render_guide_page(
         "image": og_image,
     }
 
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": TITLE["zh"],
+                "item": origin + "/",
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": name_zh,
+                "item": page_url,
+            },
+        ],
+    }
+
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -445,6 +464,9 @@ def render_guide_page(
     <script src="../../assets/analytics.js"></script>
     <script type="application/ld+json">
 {json.dumps(json_ld, ensure_ascii=False, indent=2)}
+    </script>
+    <script type="application/ld+json">
+{json.dumps(breadcrumb_ld, ensure_ascii=False, indent=2)}
     </script>
     <link rel="stylesheet" href="../../assets/style.css?v={ASSET_VERSION}">
     {theme_boot_script()}
@@ -536,6 +558,14 @@ def render_index(guides: list[dict]) -> str:
             for g in guides
         ],
     }
+    web_site_ld = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": TITLE["zh"],
+        "alternateName": TITLE["en"],
+        "url": origin,
+        "inLanguage": ["zh-CN", "en"],
+    }
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -571,6 +601,9 @@ def render_index(guides: list[dict]) -> str:
     <script src="./assets/analytics.js"></script>
     <script type="application/ld+json">
 {json.dumps(json_ld, ensure_ascii=False, indent=2)}
+    </script>
+    <script type="application/ld+json">
+{json.dumps(web_site_ld, ensure_ascii=False, indent=2)}
     </script>
     <link rel="stylesheet" href="./assets/style.css?v={ASSET_VERSION}">
     {theme_boot_script()}
