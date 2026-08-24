@@ -645,6 +645,16 @@ a:hover {
     line-height: 1.4;
 }
 
+@media (max-width: 640px) {
+    .link-card-url {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        word-break: break-all;
+    }
+}
+
 .logistics-list {
     margin: 0;
     padding-left: 1.15rem;
@@ -1098,17 +1108,9 @@ a:hover {
     transform: translateY(-1px);
 }
 
-.download-btn + .download-btn {
-    margin-left: 0.75rem;
-}
-
-.templates-md-note {
-    margin-top: 0.75rem;
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-}
-.templates-md-note a {
+.guide-method-body a[download] {
     color: var(--color-primary);
+    font-weight: 600;
     text-decoration: underline;
 }
 
