@@ -45,7 +45,7 @@ python3 -m http.server 8765        # 本地预览
 ```
 guides/*.md       ──────────────┐
 guides/en/*.md    ─────────────┼── generate_site.py → 静态页 + Word（中/英）
-data.json         ─────────────┘
+data/data.json    ─────────────┘
 ```
 
 | 字段 | 来源 |
@@ -53,7 +53,7 @@ data.json         ─────────────┘
 | 中文标题 / 天数 | guide 文件名 / 正文解析（data.json 禁写） |
 | 中/英文正文 | `guides/<中文名>.md` / `guides/en/<slug>.md` |
 | `slug` / `emoji` / `order` / `title.en` / `duration.en` / `summary.{zh,en}` / `album` / `blog` | data.json |
-| 博客头图 / 相册缩略图 | `covers-cache.json` / `album-thumbs-cache.json`（生成时由 `fetch_covers.py` 更新） |
+| 博客头图 / 相册缩略图 | `data/covers-cache.json` / `data/album-thumbs-cache.json`（生成时由 `fetch_covers.py` 更新） |
 
 ### 目录
 
@@ -61,9 +61,10 @@ data.json         ─────────────┘
 victor-travel/
 ├── guides/*.md             # 中文攻略正文（发布源头）
 ├── guides/en/<slug>.md     # 英文攻略正文（与 slug 对齐）
-├── data.json               # 附加元数据（人工维护）
-├── covers-cache.json       # 博客头图外链缓存（生成时更新）
-├── album-thumbs-cache.json # 相册五列缩略图外链缓存（生成时更新）
+├── data/
+│   ├── data.json               # 附加元数据（人工维护）
+│   ├── covers-cache.json       # 博客头图外链缓存（生成时更新）
+│   └── album-thumbs-cache.json # 相册五列缩略图外链缓存（生成时更新）
 ├── trip/{slug}/            # 详情页 + Word（生成物）
 ├── index.html, sitemap.xml # 首页与站点地图（生成物）
 ├── assets/                 # 样式与脚本

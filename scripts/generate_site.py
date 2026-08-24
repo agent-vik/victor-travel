@@ -36,7 +36,7 @@ from fetch_covers import resolve_for_guides
 ROOT = Path(__file__).resolve().parents[1]
 GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
-DATA_PATH = ROOT / "data.json"
+DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
 ASSET_VERSION = "20260824o"
 SITE_NAME = "Victor42 · Travel Guides"

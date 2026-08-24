@@ -14,8 +14,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CACHE_PATH = ROOT / "covers-cache.json"
-ALBUM_THUMBS_CACHE_PATH = ROOT / "album-thumbs-cache.json"
+CACHE_PATH = ROOT / "data" / "covers-cache.json"
+ALBUM_THUMBS_CACHE_PATH = ROOT / "data" / "album-thumbs-cache.json"
 ALBUM_THUMB_COUNT = 5
 
 UA = "victor-travel-cover-fetch/1.0 (+https://travel.victor42.work/)"
