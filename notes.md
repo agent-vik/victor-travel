@@ -34,6 +34,8 @@ python3 scripts/generate_site.py   # 站点生成（必跑）
 python3 -m http.server 8765        # 本地预览
 ```
 
+静态资源引用带 `?v=` 版本号，版本号为 `assets/` 下 css/js 内容的哈希，生成时自动计算——资源改动后缓存自动失效，无需手动维护版本号。
+
 依赖：`python-docx`（Word 生成）、`markdown`（正文渲染）。
 
 ## 3.5 SEO 现状与策略
