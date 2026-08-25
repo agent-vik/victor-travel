@@ -50,7 +50,7 @@ SITE = {
     "origin": "https://travel.victor42.work",
     "parentSite": "https://victor42.work/",
     "parentLabel": {"zh": "小玩意", "en": "Gadgets"},
-    "github": "https://github.com/greenzorro/victor-travel",
+    "github": "https://github.com/agent-vik/victor-travel",
     "albumHome": "https://album.victor42.work/",
     "blogHome": "https://victor42.eth.limo/",
 }
