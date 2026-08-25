@@ -38,7 +38,20 @@ GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
 DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
-ASSET_VERSION = "20260825c"
+# 资源版本号：对静态资源内容做哈希，内容变更即自动失效缓存，无需手动维护
+import hashlib
+
+
+def _asset_version() -> str:
+    h = hashlib.md5()
+    for f in ("style.css", "shared.js", "main.js", "guide.js"):
+        p = ROOT / "assets" / f
+        if p.exists():
+            h.update(p.read_bytes())
+    return h.hexdigest()[:10]
+
+
+ASSET_VERSION = _asset_version()
 SITE_NAME = "Victor42 · Travel Guides"
 TRIP_PREFIX = "trip"
 
