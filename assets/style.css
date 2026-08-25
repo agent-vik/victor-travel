@@ -548,9 +548,6 @@ a:hover {
     .link-cards {
         flex-direction: column;
     }
-    .link-card {
-        flex: none;
-    }
 }
 
 .link-card {
@@ -573,6 +570,12 @@ a:hover {
     transform: translateY(-1px);
     border-color: var(--color-primary);
     color: inherit;
+}
+
+@media (max-width: 640px) {
+    .link-card {
+        flex: none;
+    }
 }
 
 /* Same outer box for blog single + album 5-col; size follows blog thumb. */
