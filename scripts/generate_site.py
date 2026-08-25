@@ -38,7 +38,7 @@ GUIDES_DIR = ROOT / "guides"
 GUIDES_EN_DIR = GUIDES_DIR / "en"
 DATA_PATH = ROOT / "data" / "data.json"
 TRIP_DIR = ROOT / "trip"
-ASSET_VERSION = "20260824u"
+ASSET_VERSION = "20260825a"
 SITE_NAME = "Victor42 · Travel Guides"
 TRIP_PREFIX = "trip"
 

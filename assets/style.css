@@ -539,15 +539,23 @@ a:hover {
 
 .link-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+    .link-cards {
+        flex-direction: column;
+    }
 }
 
 .link-card {
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    flex: 1 1 0;
+    min-width: 0;
     overflow: hidden;
     background: var(--color-card-background);
     border: 1px solid var(--color-border);
