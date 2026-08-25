@@ -91,7 +91,7 @@ No sightseeing—direct return. Taxi to the airport takes about 30 minutes.
 
 ## Checklist
 
-Manage your packing list with this [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
+Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
 
 - [x] Macau mobile signal and data
 - [x] Macau bus ride code

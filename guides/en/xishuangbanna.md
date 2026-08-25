@@ -67,7 +67,7 @@ After checkout, citywalk around the municipal government area. Taxi back to the 
 
 ## Checklist
 
-Manage your packing list with this [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
+Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
 
 ## Tips
 

@@ -49,7 +49,7 @@ No sightseeing. Early-morning flight (09:50)—check out before 7:00 and leave t
 
 ## Checklist
 
-See the Excel spreadsheet for the packing list.
+Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
 
 ## Tips
 

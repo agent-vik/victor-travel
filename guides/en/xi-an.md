@@ -69,7 +69,7 @@ You won't see all of Daming Palace on departure day; focus on Danfeng Gate, Impe
 
 ## Checklist
 
-Manage your packing list with this [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
+Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
 
 ## Tips
 
