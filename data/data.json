@@ -1,224 +1,224 @@
 {
-  "guides": [
-    {
-      "file": "大理初秋休闲游.md",
-      "slug": "dali-autumn",
-      "emoji": "🏞️",
-      "title": {
-        "en": "Dali Autumn Leisure Trip"
-      },
-      "summary": {
-        "zh": "大理 6 天 5 晚：古城、苍山、三塔、喜洲与洱海生态廊道，飞机往返 + 打车市内通勤。",
-        "en": "Six days in Dali: old town, Cangshan, Three Pagodas, Xizhou, and the Erhai corridor."
-      },
-      "duration": {
-        "en": "6 days / 5 nights"
-      },
-      "order": 1,
-      "updated": "2026-08-04"
-    },
-    {
-      "file": "舟山亲子度假.md",
-      "slug": "zhoushan",
-      "emoji": "🏖️",
-      "title": {
-        "en": "Zhoushan Family Getaway"
-      },
-      "summary": {
-        "zh": "舟山朱家尖亲子自驾 4 天 3 晚，度假模式，景点按天气临时决定。",
-        "en": "Four-day self-drive family trip to Zhoushan / Zhujiajian in vacation mode."
-      },
-      "duration": {
-        "en": "4 days / 3 nights"
-      },
-      "order": 2,
-      "album": "https://album.victor42.work/album/trip-to-zhoushan/",
-      "blog": "https://victor42.eth.limo/post/trip-to-zhoushan/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "西安初夏休闲游.md",
-      "slug": "xi-an",
-      "emoji": "🐲",
-      "title": {
-        "en": "Xi'an Early-Summer Leisure Trip"
-      },
-      "summary": {
-        "zh": "西安 6 天 5 晚：钟鼓楼回坊、兵马俑华清宫、城墙大雁塔与博物馆节奏。",
-        "en": "Six days in Xi'an: Muslim Quarter, Terracotta Army, city wall, and museums."
-      },
-      "duration": {
-        "en": "6 days / 5 nights"
-      },
-      "order": 3,
-      "album": "https://album.victor42.work/album/trip-to-xi-an/",
-      "blog": "https://victor42.eth.limo/post/trip-to-xi-an/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "缙云仙都周末自驾.md",
-      "slug": "jinyun-xiandu",
-      "emoji": "⛰️",
-      "title": {
-        "en": "Jinyun Xiandu Weekend Drive"
-      },
-      "summary": {
-        "zh": "缙云仙都周末 3 天 2 晚自驾：朱潭山、轩辕文化街、岩宕书房与小赤壁日落。",
-        "en": "Weekend self-drive to Jinyun Xiandu: trails, bookshop cliffs, and sunset."
-      },
-      "duration": {
-        "en": "3 days / 2 nights"
-      },
-      "order": 4,
-      "album": "https://album.victor42.work/album/trip-to-jinyun-xiandu/",
-      "blog": "https://victor42.eth.limo/post/trip-to-jinyun-xiandu/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "苏州周末踏春.md",
-      "slug": "suzhou",
-      "emoji": "🌿",
-      "title": {
-        "en": "Suzhou Spring Weekend"
-      },
-      "summary": {
-        "zh": "苏州 4 天 3 晚：拙政园狮子林、山塘平江路与古典园林踏春。",
-        "en": "Four days in Suzhou gardens, Shantang, and Pingjiang Road."
-      },
-      "duration": {
-        "en": "4 days / 3 nights"
-      },
-      "order": 5,
-      "updated": "2026-04-29"
-    },
-    {
-      "file": "西双版纳春季亲子游.md",
-      "slug": "xishuangbanna",
-      "emoji": "🐘",
-      "title": {
-        "en": "Xishuangbanna Spring Family Trip"
-      },
-      "summary": {
-        "zh": "景洪 6 天 5 晚：原始森林公园、告庄夜市与热带休闲节奏。",
-        "en": "Six days in Jinghong: rainforest park, Gaozhuang night market, tropical pace."
-      },
-      "duration": {
-        "en": "6 days / 5 nights"
-      },
-      "order": 6,
-      "album": "https://album.victor42.work/album/trip-to-xishuangbanna/",
-      "blog": "https://victor42.eth.limo/post/trip-to-xishuangbanna/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "珠海澳门亲子度假计划.md",
-      "slug": "zhuhai-macao",
-      "emoji": "🐋",
-      "title": {
-        "en": "Zhuhai & Macao Family Holiday"
-      },
-      "summary": {
-        "zh": "珠海横琴 + 澳门 9 天 8 晚：长隆、氹仔与情侣路海滨节奏。",
-        "en": "Nine days across Hengqin, Macao, and Zhuhai waterfront."
-      },
-      "duration": {
-        "en": "9 days / 8 nights"
-      },
-      "order": 7,
-      "album": "https://album.victor42.work/album/trip-to-zhuhai-and-macao/",
-      "blog": "https://victor42.eth.limo/post/trip-to-zhuhai-and-macao/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "曼谷普吉岛香港亲子度假计划.md",
-      "slug": "bangkok-phuket-hongkong",
-      "emoji": "🏖️",
-      "title": {
-        "en": "Bangkok–Phuket–Hong Kong Family Holiday"
-      },
-      "summary": {
-        "zh": "东南亚三段式 12 天：曼谷大皇宫、普吉/皮皮岛海滩与香港旺角收尾。",
-        "en": "Twelve-day family arc: Bangkok, Phuket/Phi Phi, then Hong Kong."
-      },
-      "duration": {
-        "en": "12 days / 11 nights"
-      },
-      "order": 8,
-      "updated": "2026-04-29"
-    },
-    {
-      "file": "蒙西宁夏国庆亲子游.md",
-      "slug": "mengxi-ningxia",
-      "emoji": "🏜️",
-      "title": {
-        "en": "Western Inner Mongolia & Ningxia Self-Drive"
-      },
-      "summary": {
-        "zh": "巴彦淖尔—乌海—石嘴山—银川 6 天 5 晚小众自驾：沙海、峡谷与黄河沿线。",
-        "en": "Six-day self-drive across western Inner Mongolia and northern Ningxia."
-      },
-      "duration": {
-        "en": "6 days / 5 nights"
-      },
-      "order": 9,
-      "album": "https://album.victor42.work/album/inner-mongolia-north-ningxia-self-driving-tour/",
-      "blog": "https://victor42.eth.limo/post/inner-mongolia-north-ningxia-self-driving-tour/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "敦煌沙漠亲子游.md",
-      "slug": "dunhuang-desert",
-      "emoji": "🐫",
-      "title": {
-        "en": "Dunhuang Desert Family Trip"
-      },
-      "summary": {
-        "zh": "敦煌二刷遛娃 5 天 4 晚：雅丹西线、鸣沙山月牙泉与亲子节奏。",
-        "en": "Five-day Dunhuang revisit with kids: Yardang west line and Mingsha dunes."
-      },
-      "duration": {
-        "en": "5 days / 4 nights"
-      },
-      "order": 10,
-      "album": "https://album.victor42.work/album/a-revisit-to-dunhuang/",
-      "blog": "https://victor42.eth.limo/post/a-revisit-to-dunhuang/",
-      "updated": "2026-06-29"
-    },
-    {
-      "file": "上海周末游.md",
-      "slug": "shanghai",
-      "emoji": "🌆",
-      "title": {
-        "en": "Shanghai Weekend"
-      },
-      "summary": {
-        "zh": "上海 3 天 2 晚：新天地、观光巴士、外滩轮渡与陆家嘴夜景。",
-        "en": "Three-day Shanghai weekend: Xintiandi, Bund, ferry, and Lujiazui."
-      },
-      "duration": {
-        "en": "3 days / 2 nights"
-      },
-      "order": 11,
-      "updated": "2026-04-29"
-    },
-    {
-      "file": "敦煌自驾深度游.md",
-      "slug": "dunhuang-self-drive",
-      "emoji": "🐫",
-      "title": {
-        "en": "Dunhuang Self-Drive Deep Dive"
-      },
-      "summary": {
-        "zh": "敦煌自驾 5 天 4 晚：西线玉门关阳关、莫高窟又见敦煌、鸣沙山月牙泉。",
-        "en": "Five-day Dunhuang self-drive: west line, Mogao, and Mingsha dunes."
-      },
-      "duration": {
-        "en": "5 days / 4 nights"
-      },
-      "order": 12,
-      "album": "https://album.victor42.work/album/3596/",
-      "blog": "https://victor42.eth.limo/post/3596/",
-      "updated": "2026-06-29"
-    }
-  ]
+ "guides": [
+  {
+   "file": "大理晚秋休闲游.md",
+   "slug": "dali-autumn",
+   "emoji": "🏞️",
+   "title": {
+    "en": "Dali Autumn Leisure Trip"
+   },
+   "summary": {
+    "zh": "大理 6 天 5 晚：古城、苍山、三塔、喜洲与洱海生态廊道，飞机往返 + 打车市内通勤。",
+    "en": "Six days in Dali: old town, Cangshan, Three Pagodas, Xizhou, and the Erhai corridor."
+   },
+   "duration": {
+    "en": "6 days / 5 nights"
+   },
+   "order": 1,
+   "updated": "2026-08-25"
+  },
+  {
+   "file": "舟山亲子度假.md",
+   "slug": "zhoushan",
+   "emoji": "🏖️",
+   "title": {
+    "en": "Zhoushan Family Getaway"
+   },
+   "summary": {
+    "zh": "舟山朱家尖亲子自驾 4 天 3 晚，度假模式，景点按天气临时决定。",
+    "en": "Four-day self-drive family trip to Zhoushan / Zhujiajian in vacation mode."
+   },
+   "duration": {
+    "en": "4 days / 3 nights"
+   },
+   "order": 2,
+   "album": "https://album.victor42.work/album/trip-to-zhoushan/",
+   "blog": "https://victor42.eth.limo/post/trip-to-zhoushan/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "西安初夏休闲游.md",
+   "slug": "xi-an",
+   "emoji": "🐲",
+   "title": {
+    "en": "Xi'an Early-Summer Leisure Trip"
+   },
+   "summary": {
+    "zh": "西安 6 天 5 晚：钟鼓楼回坊、兵马俑华清宫、城墙大雁塔与博物馆节奏。",
+    "en": "Six days in Xi'an: Muslim Quarter, Terracotta Army, city wall, and museums."
+   },
+   "duration": {
+    "en": "6 days / 5 nights"
+   },
+   "order": 3,
+   "album": "https://album.victor42.work/album/trip-to-xi-an/",
+   "blog": "https://victor42.eth.limo/post/trip-to-xi-an/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "缙云仙都周末自驾.md",
+   "slug": "jinyun-xiandu",
+   "emoji": "⛰️",
+   "title": {
+    "en": "Jinyun Xiandu Weekend Drive"
+   },
+   "summary": {
+    "zh": "缙云仙都周末 3 天 2 晚自驾：朱潭山、轩辕文化街、岩宕书房与小赤壁日落。",
+    "en": "Weekend self-drive to Jinyun Xiandu: trails, bookshop cliffs, and sunset."
+   },
+   "duration": {
+    "en": "3 days / 2 nights"
+   },
+   "order": 4,
+   "album": "https://album.victor42.work/album/trip-to-jinyun-xiandu/",
+   "blog": "https://victor42.eth.limo/post/trip-to-jinyun-xiandu/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "苏州周末踏春.md",
+   "slug": "suzhou",
+   "emoji": "🌿",
+   "title": {
+    "en": "Suzhou Spring Weekend"
+   },
+   "summary": {
+    "zh": "苏州 4 天 3 晚：拙政园狮子林、山塘平江路与古典园林踏春。",
+    "en": "Four days in Suzhou gardens, Shantang, and Pingjiang Road."
+   },
+   "duration": {
+    "en": "4 days / 3 nights"
+   },
+   "order": 5,
+   "updated": "2026-04-29"
+  },
+  {
+   "file": "西双版纳春季亲子游.md",
+   "slug": "xishuangbanna",
+   "emoji": "🐘",
+   "title": {
+    "en": "Xishuangbanna Spring Family Trip"
+   },
+   "summary": {
+    "zh": "景洪 6 天 5 晚：原始森林公园、告庄夜市与热带休闲节奏。",
+    "en": "Six days in Jinghong: rainforest park, Gaozhuang night market, tropical pace."
+   },
+   "duration": {
+    "en": "6 days / 5 nights"
+   },
+   "order": 6,
+   "album": "https://album.victor42.work/album/trip-to-xishuangbanna/",
+   "blog": "https://victor42.eth.limo/post/trip-to-xishuangbanna/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "珠海澳门亲子度假计划.md",
+   "slug": "zhuhai-macao",
+   "emoji": "🐋",
+   "title": {
+    "en": "Zhuhai & Macao Family Holiday"
+   },
+   "summary": {
+    "zh": "珠海横琴 + 澳门 9 天 8 晚：长隆、氹仔与情侣路海滨节奏。",
+    "en": "Nine days across Hengqin, Macao, and Zhuhai waterfront."
+   },
+   "duration": {
+    "en": "9 days / 8 nights"
+   },
+   "order": 7,
+   "album": "https://album.victor42.work/album/trip-to-zhuhai-and-macao/",
+   "blog": "https://victor42.eth.limo/post/trip-to-zhuhai-and-macao/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "曼谷普吉岛香港亲子度假计划.md",
+   "slug": "bangkok-phuket-hongkong",
+   "emoji": "🏖️",
+   "title": {
+    "en": "Bangkok–Phuket–Hong Kong Family Holiday"
+   },
+   "summary": {
+    "zh": "东南亚三段式 12 天：曼谷大皇宫、普吉/皮皮岛海滩与香港旺角收尾。",
+    "en": "Twelve-day family arc: Bangkok, Phuket/Phi Phi, then Hong Kong."
+   },
+   "duration": {
+    "en": "12 days / 11 nights"
+   },
+   "order": 8,
+   "updated": "2026-04-29"
+  },
+  {
+   "file": "蒙西宁夏国庆亲子游.md",
+   "slug": "mengxi-ningxia",
+   "emoji": "🏜️",
+   "title": {
+    "en": "Western Inner Mongolia & Ningxia Self-Drive"
+   },
+   "summary": {
+    "zh": "巴彦淖尔—乌海—石嘴山—银川 6 天 5 晚小众自驾：沙海、峡谷与黄河沿线。",
+    "en": "Six-day self-drive across western Inner Mongolia and northern Ningxia."
+   },
+   "duration": {
+    "en": "6 days / 5 nights"
+   },
+   "order": 9,
+   "album": "https://album.victor42.work/album/inner-mongolia-north-ningxia-self-driving-tour/",
+   "blog": "https://victor42.eth.limo/post/inner-mongolia-north-ningxia-self-driving-tour/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "敦煌沙漠亲子游.md",
+   "slug": "dunhuang-desert",
+   "emoji": "🐫",
+   "title": {
+    "en": "Dunhuang Desert Family Trip"
+   },
+   "summary": {
+    "zh": "敦煌二刷遛娃 5 天 4 晚：雅丹西线、鸣沙山月牙泉与亲子节奏。",
+    "en": "Five-day Dunhuang revisit with kids: Yardang west line and Mingsha dunes."
+   },
+   "duration": {
+    "en": "5 days / 4 nights"
+   },
+   "order": 10,
+   "album": "https://album.victor42.work/album/a-revisit-to-dunhuang/",
+   "blog": "https://victor42.eth.limo/post/a-revisit-to-dunhuang/",
+   "updated": "2026-06-29"
+  },
+  {
+   "file": "上海周末游.md",
+   "slug": "shanghai",
+   "emoji": "🌆",
+   "title": {
+    "en": "Shanghai Weekend"
+   },
+   "summary": {
+    "zh": "上海 3 天 2 晚：新天地、观光巴士、外滩轮渡与陆家嘴夜景。",
+    "en": "Three-day Shanghai weekend: Xintiandi, Bund, ferry, and Lujiazui."
+   },
+   "duration": {
+    "en": "3 days / 2 nights"
+   },
+   "order": 11,
+   "updated": "2026-04-29"
+  },
+  {
+   "file": "敦煌自驾深度游.md",
+   "slug": "dunhuang-self-drive",
+   "emoji": "🐫",
+   "title": {
+    "en": "Dunhuang Self-Drive Deep Dive"
+   },
+   "summary": {
+    "zh": "敦煌自驾 5 天 4 晚：西线玉门关阳关、莫高窟又见敦煌、鸣沙山月牙泉。",
+    "en": "Five-day Dunhuang self-drive: west line, Mogao, and Mingsha dunes."
+   },
+   "duration": {
+    "en": "5 days / 4 nights"
+   },
+   "order": 12,
+   "album": "https://album.victor42.work/album/3596/",
+   "blog": "https://victor42.eth.limo/post/3596/",
+   "updated": "2026-06-29"
+  }
+ ]
 }

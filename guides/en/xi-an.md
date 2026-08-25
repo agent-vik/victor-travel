@@ -1,7 +1,7 @@
 ## Itinerary
 
 **Dates:** May xx–May xx (6 days, 5 nights)  
-Inter-city transport: Round-trip by air. Outbound MF8289 Hangzhou 10:45 → Xi'an 13:25 / Return MU2379 Xi'an 17:15 → Hangzhou 19:40  
+Inter-city transport: Round-trip by air. Outbound Hangzhou 10:45 → Xi'an 13:25 / Return Xi'an 17:15 → Hangzhou 19:40  
 Local transport: Metro + taxi.  
 Accommodation: Near Wulukou Metro Station
 
@@ -52,7 +52,7 @@ Morning at Xi'an Museum and Small Wild Goose Pagoda; afternoon at the Giant Wild
 - [x] Xi'an City Wall
 - [ ] Great Mosque of Xi'an (Huajue Lane)
 
-Old-city core day with the wall as the main sight: enter at South Gate / Yongning Gate, rent bikes, ride west to the northwest corner or near Yuxiang Gate and descend to Guangren Temple; if bikes can't be returned at the northwest corner, descend at West Gate / Anding Gate and walk to Guangren Temple. On Saturday avoid climbing the wall too late; if suitable bikes aren't available, walk a section or use the wall sightseeing bus. The Great Mosque is optional if you have energy left.
+Old-city core day with the wall as the main sight: enter at South Gate / Yongning Gate, rent bikes, ride west to the northwest corner or near Yuxiang Gate and descend to Guangren Temple; if bikes can't be returned at the northwest corner, descend at West Gate / Anding Gate and walk to Guangren Temple. Avoid climbing the wall too late on the day; if suitable bikes aren't available, walk a section or use the wall sightseeing bus. The Great Mosque is optional if you have energy left.
 
 ### D6 (May xx) Return
 

@@ -1,19 +1,19 @@
 ## Itinerary
 
-**Dates: Sep xx–Sep xx (6 days, 5 nights)**  
-Intercity transport: Flights. Outbound MU9698 Hangzhou 12:20→Dali 15:50; return JD5622 Dali 12:40→Hangzhou 16:00.  
+**Dates: Nov xx–Nov xx (6 days, 5 nights)**  
+Intercity transport: Flights. Outbound Hangzhou 13:40→Dali 17:45; return Dali 09:50→Hangzhou 12:35.  
 Local transport: Taxi.  
 Accommodation: Dali Sheloves Resort Hotel (Dali Ancient Town) 4 nights (D1–D4) + Hilton Garden Inn Dali Erhai Park 1 night (D5).  
 
-### D1 (Sep xx) Arrival
+### D1 (Nov xx) Arrival
 
-Hangzhou Xiaoshan (12:20) - Dali Fengyi (15:50)
+Hangzhou Xiaoshan (13:40) - Dali Fengyi (17:45)
 
 **Sights: Dali Ancient Town (2 hours)**
 
 Land in Dali, take a taxi to the old-town hotel and check in. Wander the ancient town in the evening; try a Bai dinner and see the night scenery.
 
-### D2 (Sep xx)
+### D2 (Nov xx)
 
 **Sights: Dali Ancient Town (1.5 hours) - Cangshan Geological Park (3.5 hours)**
 
@@ -21,7 +21,7 @@ Land in Dali, take a taxi to the old-town hotel and check in. Wander the ancient
 
 Morning: explore Dali Ancient Town from the hotel; have a proper lunch inside the old town or by the South Gate before noon. Afternoon: taxi to Cangshan Geological Park and ride the Gantong cableway round-trip. After sightseeing, taxi back to the old-town hotel.
 
-### D3 (Sep xx)
+### D3 (Nov xx)
 
 **Sights: Wuwei Temple (1.5 hours) - Chongsheng Temple Three Pagodas (2.5 hours)**
 
@@ -29,31 +29,31 @@ Morning: explore Dali Ancient Town from the hotel; have a proper lunch inside th
 
 Morning: taxi to Wuwei Temple. Midday: taxi back to the North Gate and have a proper lunch at North Gate / Xuefu Road. Afternoon: taxi to the Three Pagodas; afterward head back toward the old town on the way.
 
-### D4 (Sep xx)
+### D4 (Nov xx)
 
 **Sights: Xizhou Ancient Town (3.5 hours) - Erhai Ecological Corridor (north section) (3.5 hours)**
 
 Morning: taxi to Xizhou Ancient Town; have a proper lunch in town, then stroll the rice paddies and ride the sightseeing mini-train. Afternoon: Erhai Ecological Corridor north section (Gusheng Village)—a full half-day of waterfront walking and the old village.
 
-### D5 (Sep xx) Hotel-change day
+### D5 (Nov xx) Hotel-change day
 
 **Sights: Erhai Ecological Corridor (south section) (3 hours) - General’s Cave (1.5 hours)**
 
 Morning: check out of the old-town hotel; send luggage ahead to the Xiaguan hotel via same-city courier. Taxi straight to Longkan Pier; have a lakeside proper lunch in the village before noon. After lunch, walk the Erhai Ecological Corridor south section one-way downstream, then visit General’s Cave. In the evening, head to the Xiaguan hotel to check in and rest.
 
-### D6 (Sep xx) Return
+### D6 (Nov xx) Return
 
-Dali Fengyi (12:40) - Hangzhou Xiaoshan (16:00)
+Dali Fengyi (09:50) - Hangzhou Xiaoshan (12:35)
 
-No sightseeing. Morning: taxi from the Xiaguan hotel straight to Dali Airport for the return flight.
+No sightseeing. Early-morning flight (09:50)—check out before 7:00 and leave the Xiaguan hotel for Dali Airport around 7:30.
 
 ## Checklist
 
-Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink).
+See the Excel spreadsheet for the packing list.
 
 ## Tips
 
-- Plateau sun is strong—pack sunscreen; bring rain gear for September
+- Plateau sun is strong—pack sunscreen; November is the dry season, so rain gear is less needed but mornings and evenings are cold
 - Bring an extra warm layer for Cangshan; check cableway status before you go
 - At the Three Pagodas, take the electric cart to the top and walk downhill; Reflection Park is about 1 km south of the main scenic area
 - **Haitongue Park is free only 9:00–12:00 and is extremely capacity-limited every day**

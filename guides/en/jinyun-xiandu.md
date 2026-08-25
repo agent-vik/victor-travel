@@ -5,13 +5,13 @@ Intercity transport: Private car (round trip).
 Local transport: Self-drive.  
 Accommodation: Jinyun county seat.
 
-### D1 (May xx, Fri) Departure
+### D1 (May xx) Departure
 
 Office (18:00) - Hotel (21:30)
 
 Arrive that evening—no sightseeing planned.
 
-### D2 (May xx, Sat)
+### D2 (May xx)
 
 **Sights: Zhutan Mountain (1.5 hours) - Xuanyuan Cultural Street (1 hour) - Yandan Study (1 hour) - Little Red Cliff (2 hours)**
 
@@ -19,7 +19,7 @@ Arrive that evening—no sightseeing planned.
 
 Visit in order; eat flexibly along the way. Time it to catch the sunset at Little Red Cliff.
 
-### D3 (May xx, Sun) Return
+### D3 (May xx) Return
 
 Xiandu Scenic Area (17:00) - Home (20:30)
 

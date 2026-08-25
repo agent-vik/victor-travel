@@ -1,7 +1,7 @@
 ## Itinerary
 
 **Dates:** Mar xx–Mar xx (6 days, 5 nights)  
-Inter-city transport: Round-trip by air (outbound: Loong Air GJ8263 14:35–18:35; return: Okay Airways BK2951 15:30–20:10).  
+Inter-city transport: Round-trip by air (outbound 14:35–18:35; return 15:30–20:10).  
 Local transport: Taxis in town; rental car or chartered car for suburban trips.  
 Accommodation: Enji Hotel, Jinghong—across the street from Aegean Shopping Center, near the old-town center. About 10 minutes by taxi to in-town sights and 20 minutes to the airport.
 
