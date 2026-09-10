@@ -1,23 +1,6 @@
 {
   "guides": [
     {
-      "file": "大理晚秋休闲游.md",
-      "slug": "dali-autumn",
-      "emoji": "🏞️",
-      "title": {
-        "en": "Dali Autumn Leisure Trip"
-      },
-      "summary": {
-        "zh": "大理 6 天 5 晚：古城、苍山、三塔、喜洲与洱海生态廊道，飞机往返 + 打车市内通勤。",
-        "en": "Six days in Dali: old town, Cangshan, Three Pagodas, Xizhou, and the Erhai corridor."
-      },
-      "duration": {
-        "en": "6 days / 5 nights"
-      },
-      "order": 1,
-      "updated": "2026-08-25"
-    },
-    {
       "file": "舟山亲子度假.md",
       "slug": "zhoushan",
       "emoji": "🏖️",
