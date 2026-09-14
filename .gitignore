@@ -18,3 +18,4 @@ env/
 # OS / zip junk
 .DS_Store
 __MACOSX/
+.venv

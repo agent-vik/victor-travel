@@ -1,6 +1,40 @@
 {
   "guides": [
     {
+      "file": "温州楠溪江山水漫游.md",
+      "slug": "nanxi-yongjia",
+      "emoji": "🏞️",
+      "title": {
+        "en": "Yongjia Nanxi River Mountain Escape"
+      },
+      "summary": {
+        "zh": "温州永嘉楠溪江游览模式 3 天 3 晚，高铁往返，岩头镇为基地。",
+        "en": "Three-day sightseeing trip to Yongjia’s Nanxi River by high-speed rail, based in Yantou."
+      },
+      "duration": {
+        "en": "3 days / 3 nights"
+      },
+      "order": 0,
+      "updated": "2026-09-14"
+    },
+    {
+      "file": "台州玉环玩海休闲.md",
+      "slug": "yuhuan",
+      "emoji": "🌊",
+      "title": {
+        "en": "Yuhuan Seaside Getaway"
+      },
+      "summary": {
+        "zh": "台州玉环玩海度假 3 天 3 晚，高铁往返，后沙沙滩为主。",
+        "en": "Three-day seaside vacation in Yuhuan by high-speed rail, centered on Housha beach."
+      },
+      "duration": {
+        "en": "3 days / 3 nights"
+      },
+      "order": 1,
+      "updated": "2026-09-14"
+    },
+    {
       "file": "舟山亲子度假.md",
       "slug": "zhoushan",
       "emoji": "🏖️",
