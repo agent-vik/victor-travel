@@ -830,30 +830,7 @@ a:hover {
     border-radius: 8px;
 }
 
-.day-meals {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 8px;
-}
-
-.day-meal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin: 0;
-    font-size: 0.92rem;
-}
-
-.day-meal-label {
-    font-weight: 650;
-    color: var(--color-primary);
-    flex-shrink: 0;
-}
-
-.day-meal-label::after {
-    content: "：";
-}
+/* Meal lines render as .day-spots (same black bold as sightseeing). */
 
 .day-spots {
     margin: 0 0 8px;

@@ -206,14 +206,11 @@ def render_day(title_line: str, body: str) -> str:
     for t in parts["transport"]:
         out.append(f'<p class="day-transport">{inline_md(t)}</p>')
 
-    if parts["meals"]:
-        out.append('<div class="day-meals">')
-        for kind, text in parts["meals"]:
-            out.append(
-                f'<p class="day-meal"><span class="day-meal-label">{html.escape(kind)}</span>'
-                f'<span class="day-meal-text">{inline_md(text)}</span></p>'
-            )
-        out.append("</div>")
+    # Meals use the same black bold line style as sightseeing spot rows.
+    for kind, text in parts["meals"]:
+        sep = "：" if kind in ("午餐", "晚餐") else ": "
+        line = f"{kind}{sep}{text}"
+        out.append(f'<p class="day-spots"><strong>{html.escape(line)}</strong></p>')
 
     for spot in parts["spots"]:
         out.append(f'<p class="day-spots"><strong>{html.escape(spot)}</strong></p>')
