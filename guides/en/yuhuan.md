@@ -9,21 +9,21 @@ Accommodation: Hotel near Yuhuan New Town (mall / plaza area).
 
 Hangzhou East (15:50) - Yuhuan (17:47)
 
-**Dinner:** Near the hotel
+**Dinner: Near the hotel**
 
 Arrive in the evening and check in; stay around the hotel, no beach run that night.
 
 ### D2 (Sep xx)
 
-**Lunch:** Housha / Kanmen area  
-**Dinner:** Housha sea-view or hotel area
+**Lunch: Housha / Kanmen area  
+Dinner: Housha sea-view or hotel area**
 
 Full day at Kanmen Housha beach; Chao Station and Dongsha Fishing Village only if you feel like it—optional.
 
 ### D3 (Sep xx)
 
-**Lunch:** Housha / Kanmen area  
-**Dinner:** Housha sea-view or hotel area
+**Lunch: Housha / Kanmen area  
+Dinner: Housha sea-view or hotel area**
 
 Same as D2: full day at Housha; side stops optional.
 
