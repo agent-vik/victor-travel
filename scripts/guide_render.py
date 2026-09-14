@@ -14,6 +14,16 @@ DAY_H_RE = re.compile(r"^### (D\d+)(.*)$")
 TASK_RE = re.compile(r"^(\s*)- \[( |x|X)\] (.+)$")
 BOLD_ONLY_RE = re.compile(r"^\*\*(.+)\*\*\s*$")
 MEAL_RE = re.compile(r"^\*\*(午餐|晚餐|Lunch|Dinner)[：:]\*\*\s*(.*)$", re.I)
+# Vacation template: **午餐：… / 晚餐：…** (one bold span, optional hard break)
+MEAL_INLINE_RE = re.compile(
+    r"^\*\*(午餐|晚餐|Lunch|Dinner)[：:](.+)\*\*\s*$", re.I
+)
+MEAL_BLOCK_OPEN_RE = re.compile(
+    r"^\*\*(午餐|晚餐|Lunch|Dinner)[：:](.*)$", re.I
+)
+MEAL_BLOCK_CLOSE_RE = re.compile(
+    r"^(午餐|晚餐|Lunch|Dinner)[：:](.*)\*\*\s*$", re.I
+)
 SPOT_RE = re.compile(r"^\*\*((?:景点：|Sights?:|Attractions?:).+)\*\*\s*$", re.I)
 TIME_RE = re.compile(r"^\*\*(时间：.+|Dates?:.+|Time:.+)\*\*\s*$", re.I)
 LOGISTICS_RE = re.compile(
@@ -129,6 +139,12 @@ def parse_trip_header(header: str) -> dict:
 
 
 def parse_day_body(body: str) -> dict:
+    """Parse a day body. Meal lines accept:
+
+    - Portal/Zhoushan: ``**午餐：** 内容`` / ``**Dinner:** text``
+    - Vacation template: one bold block ``**午餐：…\\n晚餐：…**``
+      (or a single ``**晚餐：…**``)
+    """
     parts: dict = {
         "transport": [],
         "meals": [],
@@ -136,28 +152,55 @@ def parse_day_body(body: str) -> dict:
         "todos": [],
         "paragraphs": [],
     }
-    for line in body.splitlines():
+    lines = body.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i]
         if not line.strip():
+            i += 1
             continue
         if TASK_RE.match(line):
             m = TASK_RE.match(line)
             assert m
             parts["todos"].append((m.group(2).lower() == "x", m.group(3).strip()))
+            i += 1
             continue
+        # **午餐：** rest  (label alone bold)
         mm = MEAL_RE.match(line)
         if mm:
             parts["meals"].append((mm.group(1), mm.group(2).strip()))
+            i += 1
+            continue
+        # **晚餐：酒店周边**  (whole line one bold; not :** form)
+        mi = MEAL_INLINE_RE.match(line)
+        if mi:
+            parts["meals"].append((mi.group(1), mi.group(2).strip()))
+            i += 1
+            continue
+        # **午餐：…\n晚餐：…**
+        mo = MEAL_BLOCK_OPEN_RE.match(line)
+        if mo and not line.rstrip().endswith("**"):
+            parts["meals"].append((mo.group(1), mo.group(2).strip()))
+            i += 1
+            if i < len(lines):
+                mc = MEAL_BLOCK_CLOSE_RE.match(lines[i].strip())
+                if mc:
+                    parts["meals"].append((mc.group(1), mc.group(2).strip()))
+                    i += 1
             continue
         sm = SPOT_RE.match(line)
         if sm:
             parts["spots"].append(sm.group(1))
+            i += 1
             continue
         if TRANSPORT_RE.match(line.strip()) or (
             " - " in line and "(" in line and ")" in line and not line.startswith("-")
         ):
             parts["transport"].append(line.strip())
+            i += 1
             continue
         parts["paragraphs"].append(line.strip())
+        i += 1
     return parts
 
 
