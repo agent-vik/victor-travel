@@ -9,19 +9,19 @@ Accommodation: Narada Resort & Spa Zhoushan Putuo (indoor kids' playground is am
 
 Hangzhou (13:00) - Zhoushan (16:30)
 
-**Dinner:** Business district near the hotel (Donggang)
+**Dinner: Business district near the hotel (Donggang)**
 
 ### D2 (Jun xx)
 
-**Lunch:** At the hotel or nearby (only go out specifically if the weather is cool)  
-**Dinner:** Near whichever sight you visit (pick on the spot)
+**Lunch: At the hotel or nearby (only go out specifically if the weather is cool)  
+Dinner: Near whichever sight you visit (pick on the spot)**
 
 Resort mode—decide sights on the fly.
 
 ### D3 (Jun xx)
 
-**Lunch:** At the hotel or nearby (only go out specifically if the weather is cool)  
-**Dinner:** Near whichever sight you visit (pick on the spot)
+**Lunch: At the hotel or nearby (only go out specifically if the weather is cool)  
+Dinner: Near whichever sight you visit (pick on the spot)**
 
 Resort mode—decide sights on the fly.
 
@@ -29,7 +29,7 @@ Resort mode—decide sights on the fly.
 
 Zhoushan (14:00) - Hangzhou (18:00)
 
-**Lunch:** Zhoushan main island (find somewhere along the route after leaving the hotel)
+**Lunch: Zhoushan main island (find somewhere along the route after leaving the hotel)**
 
 Resort mode—decide sights on the fly.
 
