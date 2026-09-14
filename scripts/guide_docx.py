@@ -174,6 +174,7 @@ def _add_itinerary(doc: Document, content: str) -> None:
             for run in p.runs:
                 _set_run_font(run, size=10, color=COLOR_MUTED)
 
+        # Meals: same bold weight as sightseeing spot rows
         for kind, text in parts["meals"]:
             sep = "：" if kind in ("午餐", "晚餐") else ": "
             _add_paragraph(doc, f"{kind}{sep}{text}", bold=True, size=10.5, space_after=4)

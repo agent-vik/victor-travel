@@ -14,7 +14,7 @@ DAY_H_RE = re.compile(r"^### (D\d+)(.*)$")
 TASK_RE = re.compile(r"^(\s*)- \[( |x|X)\] (.+)$")
 BOLD_ONLY_RE = re.compile(r"^\*\*(.+)\*\*\s*$")
 MEAL_RE = re.compile(r"^\*\*(午餐|晚餐|Lunch|Dinner)[：:]\*\*\s*(.*)$", re.I)
-# Vacation template: **午餐：… / 晚餐：…** (one bold span, optional hard break)
+# Meal source forms (vacation template primary; see notes.md)
 MEAL_INLINE_RE = re.compile(
     r"^\*\*(午餐|晚餐|Lunch|Dinner)[：:](.+)\*\*\s*$", re.I
 )
@@ -139,11 +139,11 @@ def parse_trip_header(header: str) -> dict:
 
 
 def parse_day_body(body: str) -> dict:
-    """Parse a day body. Meal lines accept:
+    """Parse a day body.
 
-    - Portal/Zhoushan: ``**午餐：** 内容`` / ``**Dinner:** text``
-    - Vacation template: one bold block ``**午餐：…\\n晚餐：…**``
-      (or a single ``**晚餐：…**``)
+    Meal lines (vacation template): one bold block ``**午餐：…\\n晚餐：…**``,
+    or a single ``**晚餐：…**`` / ``**Lunch: …**``. Also accepts legacy
+    ``**午餐：** 内容`` (label bold alone). Rendered like sightseeing spot rows.
     """
     parts: dict = {
         "transport": [],
@@ -165,19 +165,19 @@ def parse_day_body(body: str) -> dict:
             parts["todos"].append((m.group(2).lower() == "x", m.group(3).strip()))
             i += 1
             continue
-        # **午餐：** rest  (label alone bold)
+        # Legacy: **午餐：** rest
         mm = MEAL_RE.match(line)
         if mm:
             parts["meals"].append((mm.group(1), mm.group(2).strip()))
             i += 1
             continue
-        # **晚餐：酒店周边**  (whole line one bold; not :** form)
+        # Single-meal bold line: **晚餐：…**
         mi = MEAL_INLINE_RE.match(line)
         if mi:
             parts["meals"].append((mi.group(1), mi.group(2).strip()))
             i += 1
             continue
-        # **午餐：…\n晚餐：…**
+        # Vacation block: **午餐：…\n晚餐：…**
         mo = MEAL_BLOCK_OPEN_RE.match(line)
         if mo and not line.rstrip().endswith("**"):
             parts["meals"].append((mo.group(1), mo.group(2).strip()))
@@ -249,7 +249,7 @@ def render_day(title_line: str, body: str) -> str:
     for t in parts["transport"]:
         out.append(f'<p class="day-transport">{inline_md(t)}</p>')
 
-    # Meals use the same black bold line style as sightseeing spot rows.
+    # Meals share .day-spots with sightseeing spot rows.
     for kind, text in parts["meals"]:
         sep = "：" if kind in ("午餐", "晚餐") else ": "
         line = f"{kind}{sep}{text}"
