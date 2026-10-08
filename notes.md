@@ -5,7 +5,7 @@
 ## 1. 硬约束（违反前必读）
 
 1. **`guides/*.md` 是行程事实的唯一源头**。`data.json` 只附加 md 里没有的门户字段（slug/emoji/英译/summary/互链/排序），**无权覆盖**正文事实。生成脚本检测到 data.json 写入 `title.zh` / `duration.zh` 会直接报错退出。
-2. **脱敏规则不可松动**：具体酒店名、行程日写为 `xx` / `xx日`（月保留）；星期不写（避免反推具体日期）。
+2. **脱敏规则不可松动**：发布前按脱敏规范处理——具体酒店名脱为城市/区域级，行程日写为 `xx日`（月保留）；住宿仅到城市/区域级时星期可保留；飞书行李清单模板链接为例内保留项。
 3. **餐行格式以攻略真相源为准**：度假篇与 `templates/vacation.md` 一致——一块加粗（`**午餐：…\n晚餐：…**`，或单行 `**晚餐：…**`）。门户解析适配源格式，不为渲染改 md。游览加粗行为 `**景点：…**`。解析器另兼容旧式 `**午餐：** 内容`（标签单独加粗）。
 4. **guide 内禁止出现**：YAML frontmatter、游记/相册外链、内嵌图片。互链只放在 data.json，由页面渲染成卡片。
 5. **中文标题取自文件名**（去 `.md`），中文「几天几晚」从正文解析 `（N天N晚）`——这两个字段 data.json 写了就是违规。
@@ -22,7 +22,7 @@
 
 ### Guide 正文版式
 
-- **中文**（`guides/*.md`）：`## 行程`、`**时间：**`、`### Dn`、任务列表等固定结构
+- **中文**（`guides/*.md`）：`## 行程`、`**时间：**`、`### Dn`、任务列表等固定结构。天编号严格 `D\d+`（渲染器按此正则匹配，其他写法静默丢弃）；`D0` = 抵达夜（晚间抵达不安排游玩，不计游玩日），游玩日从 D1 起
 - **游览加粗行**：`**景点：A(xh) - B(yh)**`（整行一块加粗）
 - **度假餐行**：与 `templates/vacation.md` 同形——`**午餐：…\n晚餐：…**`（一块加粗、行间可硬换行）；仅一餐时 `**晚餐：…**` / `**午餐：…**`
 - **检查清单**：`行李清单可使用[Excel表格](https://my.feishu.cn/wiki/R7EAwcYX1ikNlukteCdcVhdinhb?from=from_copylink)管理。`
@@ -40,7 +40,7 @@ python3 -m http.server 8765        # 本地预览
 
 静态资源引用带 `?v=` 版本号，版本号为 `assets/` 下 css/js 内容的哈希，生成时自动计算——资源改动后缓存自动失效，无需手动维护版本号。
 
-依赖：`python-docx`（Word 生成）、`markdown`（正文渲染）。
+依赖见 `requirements.txt`：`python-docx`（Word 生成）、`markdown`（正文渲染）等，安装至 `/home/z/.venv`（持久 venv）。
 
 ## 3.5 SEO 现状与策略
 
@@ -79,7 +79,7 @@ data/data.json    ─────────────┘
 |------|------|
 | 中文标题 / 天数 | guide 文件名 / 正文解析（data.json 禁写） |
 | 中/英文正文 | `guides/<中文名>.md` / `guides/en/<slug>.md` |
-| `slug` / `emoji` / `order` / `title.en` / `duration.en` / `summary.{zh,en}` / `album` / `blog` | data.json |
+| `slug` / `emoji` / `updated` / `title.en` / `duration.en` / `summary.{zh,en}` / `album` / `blog` | data.json |
 | 博客头图 / 相册缩略图 | `data/covers-cache.json` / `data/album-thumbs-cache.json`（生成时由 `fetch_covers.py` 更新） |
 
 ### 目录
