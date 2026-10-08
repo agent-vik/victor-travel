@@ -14,7 +14,6 @@
       "duration": {
         "en": "3 days / 3 nights"
       },
-      "order": 0,
       "updated": "2026-09-14"
     },
     {
@@ -31,7 +30,6 @@
       "duration": {
         "en": "3 days / 3 nights"
       },
-      "order": 1,
       "updated": "2026-09-14"
     },
     {
@@ -48,7 +46,6 @@
       "duration": {
         "en": "4 days / 3 nights"
       },
-      "order": 3,
       "album": "https://album.victor42.work/album/trip-to-zhoushan/",
       "blog": "https://victor42.eth.limo/post/trip-to-zhoushan/",
       "updated": "2026-06-29"
@@ -67,7 +64,6 @@
       "duration": {
         "en": "6 days / 5 nights"
       },
-      "order": 3,
       "album": "https://album.victor42.work/album/trip-to-xi-an/",
       "blog": "https://victor42.eth.limo/post/trip-to-xi-an/",
       "updated": "2026-06-29"
@@ -86,7 +82,6 @@
       "duration": {
         "en": "3 days / 2 nights"
       },
-      "order": 4,
       "album": "https://album.victor42.work/album/trip-to-jinyun-xiandu/",
       "blog": "https://victor42.eth.limo/post/trip-to-jinyun-xiandu/",
       "updated": "2026-06-29"
@@ -105,7 +100,6 @@
       "duration": {
         "en": "4 days / 3 nights"
       },
-      "order": 5,
       "updated": "2026-04-29"
     },
     {
@@ -122,7 +116,6 @@
       "duration": {
         "en": "6 days / 5 nights"
       },
-      "order": 6,
       "album": "https://album.victor42.work/album/trip-to-xishuangbanna/",
       "blog": "https://victor42.eth.limo/post/trip-to-xishuangbanna/",
       "updated": "2026-06-29"
@@ -141,7 +134,6 @@
       "duration": {
         "en": "9 days / 8 nights"
       },
-      "order": 7,
       "album": "https://album.victor42.work/album/trip-to-zhuhai-and-macao/",
       "blog": "https://victor42.eth.limo/post/trip-to-zhuhai-and-macao/",
       "updated": "2026-06-29"
@@ -160,7 +152,6 @@
       "duration": {
         "en": "12 days / 11 nights"
       },
-      "order": 8,
       "updated": "2026-04-29"
     },
     {
@@ -177,7 +168,6 @@
       "duration": {
         "en": "6 days / 5 nights"
       },
-      "order": 9,
       "album": "https://album.victor42.work/album/inner-mongolia-north-ningxia-self-driving-tour/",
       "blog": "https://victor42.eth.limo/post/inner-mongolia-north-ningxia-self-driving-tour/",
       "updated": "2026-06-29"
@@ -196,7 +186,6 @@
       "duration": {
         "en": "5 days / 4 nights"
       },
-      "order": 10,
       "album": "https://album.victor42.work/album/a-revisit-to-dunhuang/",
       "blog": "https://victor42.eth.limo/post/a-revisit-to-dunhuang/",
       "updated": "2026-06-29"
@@ -215,7 +204,6 @@
       "duration": {
         "en": "3 days / 2 nights"
       },
-      "order": 11,
       "updated": "2026-04-29"
     },
     {
@@ -232,7 +220,6 @@
       "duration": {
         "en": "5 days / 4 nights"
       },
-      "order": 12,
       "album": "https://album.victor42.work/album/3596/",
       "blog": "https://victor42.eth.limo/post/3596/",
       "updated": "2026-06-29"
@@ -251,7 +238,6 @@
       "duration": {
         "en": "6 days / 5 nights"
       },
-      "order": 2,
       "updated": "2026-09-11",
       "blog": "https://victor42.eth.limo/post/trip-to-weihai/",
       "album": "https://album.victor42.work/album/trip-to-weihai/"
@@ -270,7 +256,6 @@
       "duration": {
         "en": "4 days / 4 nights"
       },
-      "order": -1,
       "updated": "2026-10-08"
     }
   ]

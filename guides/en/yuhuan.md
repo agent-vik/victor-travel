@@ -5,7 +5,7 @@ Intercity transport: High-speed rail round trip. Outbound Hangzhou East 15:50→
 Local transport: Taxi.  
 Accommodation: Hotel near Yuhuan New Town (mall / plaza area).  
 
-### D1 (Sep xx) Departure
+### D0 (Sep xx) Departure
 
 Hangzhou East (15:50) - Yuhuan (17:47)
 
@@ -13,21 +13,21 @@ Hangzhou East (15:50) - Yuhuan (17:47)
 
 Arrive in the evening and check in; stay around the hotel, no beach run that night.
 
-### D2 (Sep xx)
+### D1 (Sep xx)
 
 **Lunch: Housha / Kanmen area  
 Dinner: Housha sea-view or hotel area**
 
 Full day at Kanmen Housha beach; Chao Station and Dongsha Fishing Village only if you feel like it—optional.
 
-### D3 (Sep xx)
+### D1 (Sep xx)
 
 **Lunch: Housha / Kanmen area  
 Dinner: Housha sea-view or hotel area**
 
 Same as D2: full day at Housha; side stops optional.
 
-### D4 (Sep xx) Return
+### D1 (Sep xx) Return
 
 Yuhuan (12:53) - Hangzhou East (14:59)
 

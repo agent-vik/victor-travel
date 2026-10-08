@@ -175,7 +175,10 @@ def load_guides() -> list[dict]:
             guide["updated"] = entry["updated"]
         guides.append(guide)
 
-    guides.sort(key=lambda g: (g.get("order", 999), g["slug"]))
+    guides.sort(
+        key=lambda g: (g.get("updated", ""), g.get("order", 999)),
+        reverse=True,
+    )
     return guides
 
 

@@ -5,7 +5,7 @@ Intercity transport: Self-drive.
 Local transport: Self-drive.  
 Accommodation: First 3 nights at a hotel in Yunhe county seat; last night at a guesthouse by the old street in Dagangtou.
 
-### Day0 (Oct xx, Fri) Departure
+### D0 (Oct xx, Fri) Departure
 
 Hangzhou (18:00) - Yunhe (22:00)
 
