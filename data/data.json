@@ -255,6 +255,23 @@
       "updated": "2026-09-11",
       "blog": "https://victor42.eth.limo/post/trip-to-weihai/",
       "album": "https://album.victor42.work/album/trip-to-weihai/"
+    },
+    {
+      "file": "云和梯田畲乡自驾.md",
+      "slug": "yunhe",
+      "emoji": "🌾",
+      "title": {
+        "en": "Yunhe Terraces & She Culture Self-Drive"
+      },
+      "summary": {
+        "zh": "丽水云和梯田 4 天 4 晚自驾，云和县城为基地，含景宁畲乡之窗与古堰画乡黄昏晨雾双时段。",
+        "en": "Four-day self-drive to the Yunhe Terraces, Dajun She village and Guyan Huaxiang across dusk and dawn, based in Yunhe county seat."
+      },
+      "duration": {
+        "en": "4 days / 4 nights"
+      },
+      "order": 13,
+      "updated": "2026-10-08"
     }
   ]
 }
