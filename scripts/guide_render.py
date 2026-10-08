@@ -10,7 +10,7 @@ import markdown
 
 from guide_i18n import UI, section_key, section_title
 
-DAY_H_RE = re.compile(r"^### (D\d+)(.*)$")
+DAY_H_RE = re.compile(r"^### (D(?:ay)?\d+)(.*)$")
 TASK_RE = re.compile(r"^(\s*)- \[( |x|X)\] (.+)$")
 BOLD_ONLY_RE = re.compile(r"^\*\*(.+)\*\*\s*$")
 MEAL_RE = re.compile(r"^\*\*(午餐|晚餐|Lunch|Dinner)[：:]\*\*\s*(.*)$", re.I)
