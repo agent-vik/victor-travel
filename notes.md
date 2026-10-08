@@ -40,6 +40,8 @@ python3 -m http.server 8765        # 本地预览
 
 静态资源引用带 `?v=` 版本号，版本号为 `assets/` 下 css/js 内容的哈希，生成时自动计算——资源改动后缓存自动失效，无需手动维护版本号。
 
+**部署与缓存（重要）**：部署 = Cloudflare Pages 直发本仓库静态文件（无构建步骤，push 后产物即发布源）。CSS/JS 因 `?v=` 哈希变化即时生效；但 **index.html 等无参数 URL 被边缘缓存 max-age=14400（4 小时）**，push 后线上最长延迟 4h 才更新——急用需在 CF dashboard 手动 purge。验证线上改动时 rg 完整规则串，勿用短数字（会误命中）。
+
 依赖见 `requirements.txt`：`python-docx`（Word 生成）、`markdown`（正文渲染）等，安装至 `/home/z/.venv`（持久 venv）。
 
 ## 3.5 SEO 现状与策略
