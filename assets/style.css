@@ -38,8 +38,8 @@
     --color-primary-soft: rgba(42, 157, 143, 0.18);
 }
 
-/* 深色下卡片内的灰底子块（跨城移动行/景点 checkbox）与卡片背景同 RGB，
-   改用半透明白提亮一档以恢复层次 */
+/* 深色下卡片内的灰底子块（跨城移动行/景点 checkbox）：
+   --color-code-bg 与卡片背景同 RGB，用半透明白提亮以区分层次 */
 [data-theme="dark"] .day-transport,
 [data-theme="dark"] .day-todo {
     background: rgba(255, 255, 255, 0.06);
