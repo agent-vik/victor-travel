@@ -42,8 +42,8 @@
    改用半透明白提亮一档以恢复层次 */
 [data-theme="dark"] .day-transport,
 [data-theme="dark"] .day-todo {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(255, 255, 255, 0.14);
 }
 
 * {
