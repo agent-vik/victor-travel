@@ -40,7 +40,9 @@ python3 -m http.server 8765        # 本地预览
 
 静态资源引用带 `?v=` 版本号，版本号为 `assets/` 下 css/js 内容的哈希，生成时自动计算——资源改动后缓存自动失效，无需手动维护版本号。
 
-**部署与缓存（重要）**：部署 = Cloudflare Pages 直发本仓库静态文件（无构建步骤，push 后几分钟内线上生效）。改动「不生效」时先清**浏览器缓存**（浏览器会持有旧 index.html 与旧 css，普通刷新未必换）——2026-10-08 实测：清浏览器缓存后立即看到新样式，边缘层并未延迟。验证线上改动时 rg 完整规则串，勿用短数字（会误命中相似透明度值）。
+**部署链路（重要）**：`git push main` → **GitHub Pages**（仓库 agent-vik/victor-travel，build_type=legacy，CNAME=travel.victor42.work）→ Cloudflare DNS 橙云代理对外提供 HTTPS。**没有 CF Pages**——门户站与 CF 的关系仅是 DNS/CDN 代理层。仓库根的 `.nojekyll` 必须保留：无它时 legacy Jekyll 构建会对纯静态站间歇性报 "Page build failed"（2026-10-08 晚 7 连败实测），加 `.nojekyll` 后走纯文件发布，稳定且更快。
+
+**改动「不生效」排查分层**：① 浏览器缓存（持有旧 index.html/css，普通刷新未必换）→ ② GH Pages 构建（push 后 1-3 分钟，构建历史查 `api.github.com/repos/agent-vik/victor-travel/pages/builds`）→ ③ GH CDN 缓存（HTML `max-age=600`，验证时 URL 加随机 query 绕过）。验证线上改动 rg 完整规则串，勿用短数字（会误命中相似透明度值）。构建失败诊断用 `x-github-request-id` 响应头识别 GH 来源——CF 代理不改变响应头里的 GH 指纹。
 
 依赖见 `requirements.txt`：`python-docx`（Word 生成）、`markdown`（正文渲染）等，安装至 `/home/z/.venv`（持久 venv）。
 
