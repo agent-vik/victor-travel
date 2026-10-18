@@ -13,11 +13,11 @@ Depart at 18:00, at least 4 hours of driving; arrive in the evening—no sightse
 
 ### D1 (Oct xx, Sat)
 
-**Sights: Shexiang Window (4 hours)**
+**Sights: Shexiang Window (4 hours) - Shexiang Style Street (1.5 hours)**
 
 - [x] Dajun
 
-About 1 hour's drive to Shexiang Window. Lunch on the old street. The wedding ceremony show requires booking, 14:30-15:20 slot. Leave for Yunhe county seat at 16:30.
+About 1 hour's drive to Shexiang Window. Lunch on the old street. The wedding ceremony show requires booking, 14:30-15:20 slot. Leave for Yunhe county seat at 16:30. After dinner, drive to the Shexiang Style Street in Jingning county seat—the Princess Parade starts at 19:00 (every Saturday and Sunday night); head back to Yunhe after the parade.
 
 ### D2 (Oct xx, Sun)
 
@@ -25,7 +25,7 @@ About 1 hour's drive to Shexiang Window. Lunch on the old street. The wedding ce
 
 - [x] Yunhe Terraces
 
-Drive up into the terraces. Visit Jiuqu Yunhuan first—viewing platform plus terrace paths. Then drive on to Baiyin Valley and Kenggen Stone Village. Head down at 17:00 back to Yunhe county seat.
+Drive up into the terraces. Visit Jiuqu Yunhuan—viewing platform plus terrace paths. Head down at 17:00 back to Yunhe county seat.
 
 ### D3 (Oct xx, Mon)
 
@@ -33,7 +33,7 @@ Yunhe (16:00) - Dagangtou (17:30)
 
 **Sights: Yunhe Terraces (4 hours) - Guyan Huaxiang (1 hour)**
 
-After check-out, drive straight up to Qixingdun for the panoramic viewing platform. Farm activities may be available; arrange one if it suits kids. Lunch on the spot at Qixingdun. Depart at 16:00 for Dagangtou, check in. After 17:30 the Huaxiang old street is free to enter—stroll and have dinner there.
+After check-out, drive straight up to Qixingdun for the panoramic viewing platform. Farm activities may be available; arrange one if it suits kids. Lunch on the spot at Qixingdun. Skip Kenggen Stone Village and the old trail. Depart at 16:00 for Dagangtou, check in. After 17:30 the Huaxiang old street is free to enter—stroll and have dinner there.
 
 ### D4 (Oct xx, Tue) Return
 
@@ -41,7 +41,7 @@ Dagangtou (14:00) - Hangzhou (dinner time)
 
 **Sights: Guyan Huaxiang (3 hours)**
 
-- [x] Guyan Huaxiang
+- [ ] Guyan Huaxiang
 
 Check out and enjoy the riverside view. Take the ferry across to Yantou Village for the millennium-old camphor trees and the Tongji Weir. Ferry back, depart by 14:00—arrive home around dinner time.
 
@@ -52,10 +52,10 @@ Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R
 ## Tips
 
 - The China She Ethnic Museum closes on Mondays and at midday.
-- Yunhe Terraces tickets are valid 2 days, one entry per sight.
+- Yunhe Terraces tickets are valid for 2 days, but the area has two ticket-check zones: Jiuqu Yunhuan is checked independently; Baiyin Valley, Kenggen Stone Village and Qixingdun share one zone ticket—a single entry per visit, no re-entry.
 - The Guanyun Ropeway has three stations: Visitor Center - Middle Station (Jiuqu Yunhuan/Baiyin Valley) - Upper Station at Meizhu Qixingdun; 3,880 m in 11 minutes.
 - Shuttle buses run only two lines: Visitor Center-Jiuqu Yunhuan and Jiuqu Yunhuan-Baiyin Valley/Kenggen; they do not reach Qixingdun.
-- All four areas (Jiuqu Yunhuan, Qixingdun, Baiyin Valley, Kenggen Stone Village) and the Visitor Center have free parking; Baiyin Valley and Kenggen Stone Village are 100 m apart.
+- The three areas (Jiuqu Yunhuan, Qixingdun, Kenggen Stone Village) and the Visitor Center have free parking.
 - The Tiankai Yunding glass viewing tower is about 300 m from Jiuqu Yunhuan.
 - Qixingdun and Baiyin Valley are about 1 km apart in a straight line, but driving requires a roughly 25-minute detour via Jiuqu Yunhuan; on foot an old trail takes 1-1.5 hours.
 - Qixingdun offers farm activities such as rice cutting, threshing and hulling.
@@ -78,6 +78,7 @@ Reference point: Yunhe County People's Government
 
 - [ ] China She Ethnic Museum (Jingning / Southeast / 22.3km / 27min)
 - [x] Shexiang Window (Jingning / South / 36.8km / 40min)
+- [x] Shexiang Style Street (Jingning / Southeast / 22.3km / 27min)
 - [ ] Yunzhong Daji (Jingning / South / 67.1km / 1h22min)
 - [ ] Fengjin Mountain (Jingning / South / 28.8km / 30min)
 
