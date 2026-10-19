@@ -33,7 +33,7 @@ Yunhe (16:00) - Dagangtou (17:30)
 
 **Sights: Yunhe Terraces (4 hours) - Guyan Huaxiang (1 hour)**
 
-After check-out, drive straight up to Qixingdun for the panoramic viewing platform. Farm activities may be available; arrange one if it suits kids. Lunch on the spot at Qixingdun. Skip Kenggen Stone Village and the old trail. Depart at 16:00 for Dagangtou, check in. After 17:30 the Huaxiang old street is free to enter—stroll and have dinner there.
+After check-out, drive straight up to Qixingdun for the panoramic viewing platform. Farm activities may be available; arrange one if it suits kids. Lunch on the spot at Qixingdun. Skip Kenggen Stone Village and the old trail. Depart at 16:00 for Dagangtou, check in. Stroll the Huaxiang old street and have dinner there.
 
 ### D4 (Oct xx, Tue) Return
 
