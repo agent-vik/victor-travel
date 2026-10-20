@@ -43,7 +43,7 @@ Dagangtou (14:00) - Hangzhou (dinner time)
 
 - [ ] Guyan Huaxiang
 
-Check out and enjoy the riverside view. Take the ferry across to Yantou Village for the millennium-old camphor trees and the Tongji Weir. Ferry back, depart by 14:00—arrive home around dinner time.
+Check out and enjoy the riverside view. Take the ferry across to Yantou Village for the ancient camphor trees and the Tongji Weir. Ferry back, depart by 14:00—arrive home around dinner time.
 
 ## Checklist
 
@@ -58,7 +58,7 @@ Manage your packing list with an [Excel spreadsheet](https://my.feishu.cn/wiki/R
 - The three areas (Jiuqu Yunhuan, Qixingdun, Kenggen Stone Village) and the Visitor Center have free parking.
 - The Tiankai Yunding glass viewing tower is about 300 m from Jiuqu Yunhuan.
 - Qixingdun and Baiyin Valley are about 1 km apart in a straight line, but driving requires a roughly 25-minute detour via Jiuqu Yunhuan; on foot an old trail takes 1-1.5 hours.
-- Qixingdun offers farm activities such as rice cutting, threshing and hulling.
+- Qixingdun may offer farm activities such as rice cutting, threshing and hulling.
 - Kenggen Stone Village features its autumn produce-drying scene in mid-October.
 
 ---
